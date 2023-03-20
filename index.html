@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Position property reference </h1>
+    <div id="introduction">
+        <h2>What is CSS?</h2>
+        <p>CSS is the language we use to style an HTML document. <br>
+            CSS describes how HTML elements should be displayed.</p>
+    </div>
+    <h3>How to position your content box</h3>
+    <table>
+        <thead>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="propertyName" rowspan="5">Position</th>
+                <td class="propertyValue">Static</td>
+                <td class="valueDescription">Default position property. Isn't affected by directional properties.</td>
+            </tr>
+            <tr>
+                <td class="propertyValue">Relative</td>
+                <td class="valueDescription">Postion itself from the original position to move accordingly
+                    to the directional properties.
+                </td>
+            </tr>
+            <tr>
+                <td class="propertyValue">fixed</td>
+                <td class="valueDescription">Removes the content box from the normal flow and viewport 
+                    and then fix it to the position of the given property(Top, bottom, 
+                    left, right) it stays visable even if the page is scrolled.
+                </td>
+            </tr>
+            <tr>
+                <td class="propertyValue">Absolute</td>
+                <td class="valueDescription">Removes the content box from the normal flow but not the
+                    viewpoint. The content box can be positioned relative to the
+                    closest ancestor(parent) content box. Doesn't stay when scrolled.
+                    <br> It will overlap other content. Z-index is recommended with 
+                    absolute position.
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="propertyValue">Sticky</td>
+                <td class="valueDescription">This position property is bit like fixed, however where as 
+                    fixed position is not effected by scrolling, the sticky position
+                    is toggled once it reaches its' scrolling position(when the borders meet)
+                    and then sticks in place by the given property(top,bottom,
+                    left,right).
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3> How to change and fix your content box size</h3>
+    <table>
+        <thead>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="propertyName" rowspan="5">Height & Width</th>
+                <td class="propertyValue">auto</td>
+                <td class="valueDescription">This is the default setting for the 
+                    height and width size of the content box. The box height and width
+                    is automatically calculated and assigned by the browser.
+                </td>
+            </tr>
+            <tr>
+                <td class="propertyValue">"Length"</td>
+                <td class="valueDescription">There is no such css value declaration as 
+                    "length". This is the value where you input a number value with the
+                     unit you want to use. Defining the height or width in px(pixel), cm, in etc.
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
